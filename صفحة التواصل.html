@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="التنسيق.css">
+    <title>تواصل معنا - موقع جولف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+        }
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>تواصل معنا</h1>
+    </header><nav class="navbar">
+        <ul>
+          <li><a href="الغرفه.html">غرفة</a></li>
+          <li><a href="ملعب تينس.html">ملعب تينس</a></li>
+          <li><a href="ملعب جولف.html">ملعب جولف</a></li>
+          <li><a href="مقهى.html">مقهى</a></li>
+          <li><a href="المتجر.html">متجر</a></li>
+          <li><a href="استراحة واستجمام.html">استراحة واستجمام</a></li>
+          <li><a href="حزمة مخصصة للفعالية المؤسسية.html">حزمة مخصصة للفعالية المؤسسية</a></li>
+          <li><a href="حزمة مخصصة 3 جولات.html"></a>حزمة مخصصة 3 جولات</li>
+          <li><a href="حزمة مخصصة خمس جولات.html"></a>حزمة مخصصة 3 جولات</li>
+          <li><a href="اتصل بنا.html"></a>اتصل بنا</li>
+          <li><a href="الخدمات.html"></a>الخدمات</li>
+          <li><a href="الصفحة الرئيسية.html"></a>الصفحة الرئيسية</li>
+        </ul>
+      </nav>
+    <div class="container">
+        <h2>نحن هنا لمساعدتك!</h2>
+        <form action="contact_form.php" method="post">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="إرسال">
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 موقع جولف. جميع الحقوق محفوظة.
+    </footer>
+</body>
+</html>
